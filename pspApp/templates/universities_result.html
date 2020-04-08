@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.0.0.min.js" integrity="sha384-5Y+xuMRAbgBj/2WKUiL8yzV4fBFic1HJPo2hT3pq2IsEzbsJjj8kT2i0b1lZ7C2N" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="95846d24-9172-4aa3-a4ea-889d8ac62055" data-root-id="1282"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1392">
+          {"8254a4a8-69ed-417a-8c17-d3d0da800434":{"roots":{"references":[{"attributes":{"data_source":{"id":"1281"},"glyph":{"id":"1302"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1303"},"selection_glyph":null,"view":{"id":"1305"}},"id":"1304","type":"GlyphRenderer"},{"attributes":{"axis_label_text_font_size":"5pt","axis_label_text_font_style":"bold","formatter":{"id":"1310"},"major_label_orientation":1,"ticker":{"id":"1294"}},"id":"1293","type":"CategoricalAxis"},{"attributes":{"source":{"id":"1281"}},"id":"1305","type":"CDSView"},{"attributes":{},"id":"1314","type":"Selection"},{"attributes":{"fill_color":{"field":"color"},"line_color":{"field":"color"},"top":{"field":"probabilities"},"width":{"value":0.9},"x":{"field":"universities"}},"id":"1302","type":"VBar"},{"attributes":{},"id":"1312","type":"BasicTickFormatter"},{"attributes":{},"id":"1289","type":"CategoricalScale"},{"attributes":{},"id":"1294","type":"CategoricalTicker"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"field":"color"},"line_alpha":{"value":0.1},"line_color":{"field":"color"},"top":{"field":"probabilities"},"width":{"value":0.9},"x":{"field":"universities"}},"id":"1303","type":"VBar"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1306"}]},"id":"1300","type":"Toolbar"},{"attributes":{"factors":["University Of Alberta","University of British Columbia","Carleton University","Simon Faser University","University of Regina","University of Ottawa","Victoria University","University of Toronto","Waterloo University","Western Ontario University"],"range_padding":0.1},"id":"1285","type":"FactorRange"},{"attributes":{},"id":"1291","type":"LinearScale"},{"attributes":{"text":"University Prediction"},"id":"1283","type":"Title"},{"attributes":{},"id":"1310","type":"CategoricalTickFormatter"},{"attributes":{"below":[{"id":"1293"}],"center":[{"id":"1295"},{"id":"1299"}],"left":[{"id":"1296"}],"plot_height":400,"plot_width":1200,"renderers":[{"id":"1304"}],"title":{"id":"1283"},"toolbar":{"id":"1300"},"toolbar_location":null,"x_range":{"id":"1285"},"x_scale":{"id":"1289"},"y_range":{"id":"1287"},"y_scale":{"id":"1291"}},"id":"1282","subtype":"Figure","type":"Plot"},{"attributes":{"axis":{"id":"1296"},"dimension":1,"ticker":null},"id":"1299","type":"Grid"},{"attributes":{"callback":null,"tooltips":[["probabilities","@probabilities"]]},"id":"1306","type":"HoverTool"},{"attributes":{"axis":{"id":"1293"},"grid_line_color":null,"ticker":null},"id":"1295","type":"Grid"},{"attributes":{},"id":"1297","type":"BasicTicker"},{"attributes":{"data":{"color":["red","green","blue","pink","purple","yellow","grey","orange","brown","black"],"probabilities":[{"__ndarray__":"YoPlriWLzz4=","dtype":"float64","shape":[1]},{"__ndarray__":"4QRLva3YND8=","dtype":"float64","shape":[1]},{"__ndarray__":"+z/2ywgs5j4=","dtype":"float64","shape":[1]},{"__ndarray__":"308AHqMWnz8=","dtype":"float64","shape":[1]},{"__ndarray__":"AAAAAAAA8D8=","dtype":"float64","shape":[1]},{"__ndarray__":"jgxXTzX91z4=","dtype":"float64","shape":[1]},{"__ndarray__":"MKUTGuYQ8j4=","dtype":"float64","shape":[1]},{"__ndarray__":"hNjLvOYzXj8=","dtype":"float64","shape":[1]},{"__ndarray__":"xnrWkDSHMz8=","dtype":"float64","shape":[1]},{"__ndarray__":"oIemx42UEj8=","dtype":"float64","shape":[1]}],"universities":["University Of Alberta","University of British Columbia","Carleton University","Simon Faser University","University of Regina","University of Ottawa","Victoria University","University of Toronto","Waterloo University","Western Ontario University"]},"selected":{"id":"1314"},"selection_policy":{"id":"1313"}},"id":"1281","type":"ColumnDataSource"},{"attributes":{"formatter":{"id":"1312"},"ticker":{"id":"1297"}},"id":"1296","type":"LinearAxis"},{"attributes":{"end":2},"id":"1287","type":"Range1d"},{"attributes":{},"id":"1313","type":"UnionRenderers"}],"root_ids":["1282"]},"title":"Bokeh Application","version":"2.0.0"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1392').textContent;
+                  var render_items = [{"docid":"8254a4a8-69ed-417a-8c17-d3d0da800434","root_ids":["1282"],"roots":{"1282":"95846d24-9172-4aa3-a4ea-889d8ac62055"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>

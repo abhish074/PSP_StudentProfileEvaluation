@@ -1,0 +1,43 @@
+{% load static %}
+<html>
+<head>
+
+
+  <title>PSP: Predicting Student Profile</title>
+
+  <link rel="stylesheet" href="{% static 'mainpage_css/all.min.css' %}">
+<!--  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">-->
+<!--  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">-->
+  <link href="{% static 'mainpage_css/freelancer.min.css' %}" rel="stylesheet">
+
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.pydata.org/bokeh/release/bokeh-2.0.0.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.pydata.org/bokeh/release/bokeh-widgets-2.0.0.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.pydata.org/bokeh/release/bokeh-tables-2.0.0.min.css"/>
+
+
+</head>
+<body>
+{% block viewresults %}
+
+
+
+{% endblock %}
+
+</body>
+
+  <script src="{% static 'mainpage_js/jquery.min.js' %}"></script>
+    <script src="{% static 'mainpage_js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'mainpage_js/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'mainpage_js/jqBootstrapValidation.js' %}"></script>
+    <script src="{% static 'mainpage_js/contact_me.js' %}"></script>
+    <script src="{% static 'mainpage_js/freelancer.js' %}"></script>
+
+
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-2.0.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-widgets-2.0.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-tables-2.0.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-api-2.0.0.min.js"></script>
+   {{script | safe}}
+
+</html>
