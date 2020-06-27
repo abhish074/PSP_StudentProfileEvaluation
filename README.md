@@ -9,7 +9,4 @@ The project helps students for analyzing their profile for getting admission int
 Student gets the information about the universities and has a platform to create their profile. 
 Analysis of the profile and a comparative study of the admission percentage of the students. The percentage tells students whether to apply or not apply for admission.
 
-
-
-
-
+Live demo:https://pspapp.herokuapp.com/pspApp/mainPage
